@@ -52,10 +52,15 @@
 	font-size: 22px;
 	text-transform: uppercase;
 }
-.header-visible{
 
+/* TopBar icons ------------------------------------------------------------------------------------------------------------- */
+
+.topbar-icon {
+	transition: all ease-out .3s;
 }
-
+.topbar-icon:hover {
+	color: #CF9C67;
+}
 
 /* Page Intro --------------------------------------------------------------------------------------------------------------- */
 
@@ -217,17 +222,23 @@
 	margin-bottom: 80px;
 	display: flex;
 	flex-direction: column;
-	align-items: center; 
+	align-items: center;
 }
 
 .latest article {
 	max-width: 320px;
+	
 }
 
 .latest>article:last-child {
 	margin-bottom: 0;
 }
-
+ .latest-link{
+	 transition: all ease-in-out .3s;
+ }
+ .latest-link:hover{
+	 color: #7A7A7A !important;
+ }
 
 /* Used when elements stack in smaller viewports */
 
@@ -982,7 +993,7 @@ textarea:focus,
 	transition: all ease-out .4s;
 }
 .header-is_hidden{
-	opacity: 0; 
+	transform: translateY(-100%);
 }
 /* Top Bar */
 
