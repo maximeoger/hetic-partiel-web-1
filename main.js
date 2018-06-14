@@ -5,7 +5,6 @@ var ui = {
 
 
 document.addEventListener('scroll', function(){
-    console.log(event);
     if( window.pageYOffset > 200 ){
         ui.back_to_top.classList.add('visible');
     }else{
@@ -15,7 +14,6 @@ document.addEventListener('scroll', function(){
 
 document.addEventListener('wheel', function(event){
     if(event.deltaY >= 0){
-        console.log(event.deltaY);
         ui.header.classList.add('header-is_hidden');
     }else{
         ui.header.classList.remove('header-is_hidden');
