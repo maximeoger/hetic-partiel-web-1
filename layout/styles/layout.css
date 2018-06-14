@@ -38,7 +38,9 @@
 
 /* Header --------------------------------------------------------------------------------------------------------------- */
 
-#header {}
+#header {
+	transition: all ease-out .3s;
+}
 
 #header #logo {
 	margin: 30px 0 0 0;
@@ -49,6 +51,9 @@
 	padding: 0;
 	font-size: 22px;
 	text-transform: uppercase;
+}
+.header-visible{
+
 }
 
 
@@ -928,11 +933,13 @@ textarea:focus,
 .row0,
 .row0 a {
 	color: #FFFFFF;
+	/*position: fixed;*/
 }
 
 .row1 {
 	color: #FFFFFF;
 	background-color: rgba(0, 0, 0, .2);
+	/*position: fixed;*/
 }
 
 .row2 {
@@ -961,7 +968,16 @@ textarea:focus,
 	color: #121212;
 }
 
-
+/* header wrapper */
+#header-wrapper{
+	z-index: 9999;
+	position: fixed;
+	width: 100vw;
+	transition: all ease-out .4s;
+}
+.header-is_hidden{
+	opacity: 0; 
+}
 /* Top Bar */
 
 #topbar ul li:first-child a {
